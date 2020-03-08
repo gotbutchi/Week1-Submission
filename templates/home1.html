@@ -6,12 +6,19 @@
     <title>Future Brick</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Niconne|Qwigley|Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="/static/Brick.jpg" alt="">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="/Content/bootstrap.css" />
+
+    <!-- JS -->
+    <script type="text/javascript" src="/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.bundle.min.js"></script>
   </head>
   
   <body>
@@ -35,13 +42,14 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Our Stories
+              Explore project
             </a>
+            
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Cause Login</a>
-              <a class="dropdown-item" href="#">For Business</a>
+              <a class="dropdown-item" href="https://www.globalgiving.org/search/?size=10&nextPage=1&selectedThemes=edu&loadAllResults=true">Top Theme</a>
+              <a class="dropdown-item" href="https://www.globalgiving.org/search/?size=25&nextPage=1&sortField=sortorder&selectedCountries=00india&loadAllResults=true">Top Country</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Support Us</a>
+              <a class="dropdown-item" href="https://www.globalgiving.org/search/?size=25&nextPage=1&sortField=sortorder&loadAllResults=true">Browse All Projects</a>
             </div>
           </li>
           <li class="nav-item">
@@ -140,9 +148,6 @@
   
         </div>
         {% endfor %}
-
-        
-
        </div>
     </div>
     
@@ -150,14 +155,113 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+    <!-- Optional JavaScript-->
 
-  <footer>
-    <div class="container">
-      <img class="footer-img" src="/static/footer.png" alt="">
+  <div class="container clearfix emailRegister">
+      <div class="row frmEmailRegister clearfix">
+        <div class="col-md-12 col-sm-12">
+          <h3 class="subcribe">&nbsp;Sign up&nbsp;</h3>
+        </div>
+        
+        <div class="col-xs-12 clearfix">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn" id="btn">Submit</button>
+          </form>
+          
+        </div>  
+      </div>
+       
     </div>
-  </footer>
-</div>
+  </div>
+
+  <div id="footer" class="container clearfix">
+    <div class="row clearfix" style="text-align: center;">
+      <div class="col-md-2 col-sm-3 clearfix colorMobile">
+        <div class="clearfix">
+          <h3 class="title" style="text-align: center;">Address</h3>
+        </div>
+      <div>
+        <ul>
+          <li><a href="#">12 Ton Dan, HCM </a></li>
+          <li><a href="">Somewhere beyond the sea</a></li>                                    
+        </ul>
+      </div>
+    </div>
+
+      <div class="col-md-2 col-sm-3 clearfix colorMobile">
+        <div class="clearfix">
+          <h3 class="title" style="text-align: center;">Information</h3>
+        </div>
+      <div>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Partner</a></li>
+          <li><a href="#">Address</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Employment</a></li>
+        </ul>
+      </div>
+    </div>
+    
+      <div class="col-md-2 col-sm-3 clearfix colorMobile">
+        <div class="clearfix">
+            <h3 class="title" style="text-align: center;">Support</h3>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Frequently asked Questions</a></li>
+            <li><a href="#">How to donate</a></li>
+            <li><a href="#">Donation Status</a></li>        
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-2 col-sm-3 clearfix colorMobile">
+        <div class="clearfix">
+          <h3 class="title" style="text-align: center;">Account</h3>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">For business</a></li>
+            <li><a href="#">For individuals</a></li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12 clearfix  hidden-xs hidden-sm">
+            <h3 class="title">Connect with us</h3>
+            <p class="icon">
+              <a href="#"><i class="fa fa-skype fa-3x"></i></a>
+              <a href="#"><i class="fa fa-youtube fa-3x"></i></a>
+              <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>                      
+            </p>
+        </div>
+    </div>
+    <!--  /row -->
+  </div>
+
+  <div class="container">
+    <img class="footer-img" src="/static/footer.png" alt="">
+  </div>
+  
+</body>
 
 </html>
