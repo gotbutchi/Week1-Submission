@@ -32,7 +32,7 @@ pylint-flask==0.6
 pylint-plugin-utils==0.6
 pyparsing==2.4.6
 pytest==5.3.5
-PyYAML==5.3
+PyYAML==5.4
 requests==2.23.0
 requirements-detector==0.6
 setoptconf==0.2.0
